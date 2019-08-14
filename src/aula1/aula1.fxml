@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="aulas.aula1Controller">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aula1.aula1Controller">
     <children>
         <Button fx:id="button" layoutX="126" layoutY="90" onAction="#handleButtonAction" text="Clique Aqui!" textFill="#f70707">
          <font>
@@ -15,7 +15,7 @@
          <font>
             <Font size="24.0" />
          </font></Label>
-      <Button layoutX="445.0" layoutY="73.0" mnemonicParsing="false" onAction="#surpresa" text="Surpreenda-me">
+      <Button layoutX="432.0" layoutY="82.0" mnemonicParsing="false" onAction="#surpresa" text="Surpreenda-me">
          <font>
             <Font size="31.0" />
          </font>
