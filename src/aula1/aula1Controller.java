@@ -12,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 /**
  *
@@ -25,6 +26,8 @@ public class aula1Controller implements Initializable {
     private Button button;
     @FXML
     private Label labelSurpresa;
+    @FXML
+    private TextField textFieldMensagem;
     
     @FXML
     private void handleButtonAction(ActionEvent event) {
@@ -43,9 +46,16 @@ public class aula1Controller implements Initializable {
 
     @FXML
     private void surpresa(ActionEvent event) {
-        System.out.println("Vc ganhou 10 pontos!");
         
-        labelSurpresa.setText("Vc ganhou 10 pontos!");
+        //Pegando o texto do textField
+        String t = textFieldMensagem.getText();
+        
+        //Jogando o texto que peguei anteriormente
+        //no label
+        labelSurpresa.setText(t);
+        
+        //Para jogar um texto no textField é
+        //só usar o .setText()
     }
     
 }
