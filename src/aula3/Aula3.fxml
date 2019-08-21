@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="aula3.Aula3Controller">
+   <children>
+      <Label layoutX="210.0" layoutY="14.0" prefHeight="36.0" prefWidth="194.0" text="Digite a sua senha do banco:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="94.0" prefHeight="46.0" prefWidth="165.0" text="Quais suas reclamações?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordFieldSenha" layoutX="226.0" layoutY="60.0" />
+      <TextArea fx:id="textAreaReclamacoes" layoutX="201.0" layoutY="140.0" prefHeight="90.0" prefWidth="200.0" />
+      <Button layoutX="251.0" layoutY="345.0" mnemonicParsing="false" onAction="#pegarDados" text="Pegar Dados" />
+      <Label fx:id="labelDados" layoutX="206.0" layoutY="270.0" text="DADOS" />
+   </children>
+</AnchorPane>
